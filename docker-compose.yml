@@ -1,0 +1,32 @@
+#version: '3.9'
+ 
+services:
+
+  vitereact:
+    # Specify the image to start the container from
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: learnikevitest
+    tty: true
+    
+    # Expose ports (HOST:CONTAINER)
+    ports:
+      - 5173:5173
+    # Set environment variables
+    #environment:
+    # Mount host directories to container directories
+    
+    volumes:
+      - ./source:/source
+      - node_modules_3:/source/vite-testproj/node_modules
+      #- node_modules_4:/usr/lib/node_modules
+
+volumes:
+  node_modules_3:
+  #node_modules_4:
+
+  
+
+    

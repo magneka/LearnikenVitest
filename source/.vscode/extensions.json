@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "hbenl.vscode-test-explorer",
+        "vitest.explorer",
+        "rluvaton.vscode-vitest",
+        "nucllear.vscode-extension-auto-import",
+        "poffm.ui-test-visualizer"
+    ]
+}
